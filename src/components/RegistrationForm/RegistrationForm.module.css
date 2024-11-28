@@ -1,0 +1,72 @@
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #f5eae0; /* Нежный бежевый фон */
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+  padding: 25px;
+  border: 1px solid #d3c4b5; /* Светлый контур */
+  border-radius: 8px; /* Более мягкие углы */
+  background-color: #fffaf4; /* Мягкий кремовый цвет */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.labelText {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #6d4c41; /* Тёплый коричневый цвет */
+}
+
+.input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbbeb3; /* Нежный оттенок для границ */
+  border-radius: 5px;
+  background-color: #fdfaf6; /* Светлый фон */
+  color: #5d4037; /* Коричневый текст */
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #6d4c41; /* Акцент при фокусе */
+  outline: none;
+}
+
+.errorMessage {
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+.button {
+  padding: 12px;
+  font-size: 15px;
+  background-color: #6d4c41; /* Глубокий коричневый цвет */
+  color: #ffffff; /* Белый текст */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #5d4037; /* Немного темнее при наведении */
+  transform: translateY(-2px); /* Лёгкое приподнятие */
+}
+
+.button:active {
+  background-color: #4e342e; /* Ещё темнее при нажатии */
+  transform: translateY(0);
+}

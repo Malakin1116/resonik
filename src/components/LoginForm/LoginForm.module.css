@@ -1,0 +1,77 @@
+/* Основной контейнер */
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  background-color: #f5eae0; /* Нежный бежевый фон */
+}
+
+/* Стили для формы */
+.form {
+  display: flex;
+  flex-direction: column;
+  width: 320px; /* Немного больше пространства */
+  padding: 25px;
+  border: 1px solid #d3c4b5; /* Светлый контур */
+  border-radius: 8px; /* Мягкие углы */
+  background-color: #fffaf4; /* Кремовый фон */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+}
+
+/* Стили для меток и полей */
+.label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px; /* Увеличенный отступ */
+}
+
+.labelText {
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #6d4c41; /* Тёплый коричневый цвет */
+}
+
+.input {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #cbbeb3; /* Нежный оттенок границ */
+  border-radius: 5px;
+  background-color: #fdfaf6; /* Светлый кремовый фон */
+  color: #5d4037; /* Коричневый текст */
+  transition: border-color 0.3s ease;
+}
+
+.input:focus {
+  border-color: #6d4c41; /* Акцент при фокусе */
+  outline: none;
+}
+
+/* Стили для сообщений об ошибках */
+.errorMessage {
+  color: #d9534f;
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* Кнопка отправки */
+.button {
+  padding: 12px;
+  font-size: 15px;
+  background-color: #6d4c41; /* Тёмно-коричневый фон */
+  color: #fff; /* Белый текст */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.button:hover {
+  background-color: #5d4037; /* Более тёмный оттенок */
+  transform: translateY(-2px); /* Лёгкий эффект подъёма */
+}
+
+.button:active {
+  background-color: #4e342e; /* Ещё темнее при нажатии */
+  transform: translateY(0);
+}

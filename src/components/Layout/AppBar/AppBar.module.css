@@ -1,0 +1,133 @@
+/* Общий стиль для шапки */
+.header {
+  background-color: #b9a895;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+}
+
+.ul {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  gap: 25px; /* Большой gap по умолчанию */
+}
+
+/* Адаптивное уменьшение gap */
+@media (max-width: 600px) {
+  .ul {
+    gap: 25px; /* Маленький gap на мобильных */
+  }
+}
+
+li {
+  display: flex;
+  align-items: center;
+  height: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #000000; /* Изменён цвет текста на чёрный */
+  font-size: 18px; /* Увеличен размер текста */
+  font-weight: 600; /* Полужирный текст */
+  letter-spacing: 1px; /* Увеличение расстояния между буквами */
+  font-family: "Arial", sans-serif; /* Новый стиль текста */
+  transition: color 0.3s ease, transform 0.3s ease; /* Добавлена анимация */
+}
+
+a:hover {
+  color: #4d4c43;
+  transform: scale(1.05); /* Лёгкое увеличение текста при наведении */
+}
+
+button {
+  background-color: white;
+  color: #404941;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background-color: #74715b;
+  color: #59775a;
+}
+
+/* Стиль для заголовка ArtAngelina */
+.art_angelina {
+  font-family: "Georgia", serif; /* Новый стиль текста */
+  font-size: 2.2rem; /* Увеличенный размер текста */
+  font-weight: bold;
+  color: #000000; /* Цвет текста изменён на чёрный */
+  text-align: center;
+  letter-spacing: 1.5px; /* Увеличено расстояние между буквами */
+  position: relative;
+  display: inline-block;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  margin: 10px 100px;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Эффект при наведении */
+.art_angelina:hover {
+  transform: scale(1.1);
+  text-shadow: 4px 4px 8px rgba(0, 0, 0, 0.4);
+  color: #646464;
+}
+
+.art_angelina::before,
+.art_angelina::after {
+  content: "";
+  position: absolute;
+  height: 3px;
+  width: 50px;
+  background: #000000;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.art_angelina::before {
+  left: -70px;
+}
+
+.art_angelina::after {
+  right: -70px;
+}
+
+/* Скрываем заголовок на мобильных устройствах */
+@media (max-width: 600px) {
+  .art_angelina {
+    display: none; /* Скрываем заголовок */
+  }
+}
+
+/* Убираем полоски на планшетах */
+@media (min-width: 600px) and (max-width: 900px) {
+  .art_angelina {
+    margin-right: 30px;
+  }
+
+  ul {
+    gap: 25px;
+  }
+
+  .art_angelina::before,
+  .art_angelina::after {
+    display: none; /* Убираем полоски */
+  }
+}

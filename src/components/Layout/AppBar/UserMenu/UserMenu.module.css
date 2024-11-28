@@ -1,0 +1,53 @@
+/* Пользовательское меню */
+.userMenu {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(255, 75, 92, 0.5); /* Полупрозрачный фон */
+}
+
+/* Приветствие (greeting) */
+.greeting {
+  font-size: 1.2rem; /* Увеличенный размер текста */
+  font-weight: bold; /* Жирный текст */
+  color: #ff4b5c; /* Цвет текста */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Легкая тень */
+  font-family: "Georgia", serif; /* Элегантный шрифт */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.greeting:hover {
+  color: #e04351; /* Меняем цвет при наведении */
+  transform: scale(1.05); /* Легкое увеличение текста */
+}
+
+/* Кнопка выхода (logoutButton) */
+.logoutButton {
+  background-color: transparent; /* Прозрачный фон */
+  color: #ff4b5c; /* Основной цвет текста */
+  padding: 10px 20px; /* Увеличенные отступы */
+  border-radius: 4px; /* Скругленные углы */
+  font-size: 1rem;
+  font-weight: bold; /* Жирный текст */
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+  font-family: "Arial", sans-serif; /* Четкий и минималистичный шрифт */
+}
+
+.logoutButton:hover {
+  background-color: #ff4b5c; /* Заливка при наведении */
+  color: #fff; /* Белый текст */
+  transform: scale(1.1); /* Увеличение кнопки */
+}
+
+/* Адаптивный дизайн */
+@media (max-width: 600px) {
+  .userMenu {
+    gap: 20px;
+    margin-left: 0;
+  }
+
+  .greeting {
+    display: none; /* Скрываем приветствие */
+  }
+}

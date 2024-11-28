@@ -1,0 +1,76 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 750px;
+  background-color: #f5f5f5;
+  padding: 20px;
+  text-align: center;
+  background: #efe5da;
+}
+
+.artistPhoto {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 25%;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.artistName {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #624f3a;
+  margin-bottom: 20px;
+}
+
+/* Ссылка на галерею */
+.navLink {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #624f3a;
+  padding: 10px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.navLink:hover {
+  background-color: #85684c;
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  transform: translateY(-3px);
+}
+
+.active {
+  background-color: #85684c;
+  color: #f5f5f5;
+  font-weight: 700;
+}
+
+/* Адаптивность для планшетов */
+@media (min-width: 600px) {
+  .artistPhoto {
+    max-width: 400px;
+  }
+  .navLink {
+    font-size: 1.8rem;
+    padding: 12px 25px;
+  }
+}
+
+/* Адаптивность для компьютеров */
+@media (min-width: 900px) {
+  .artistPhoto {
+    max-width: 450px;
+    height: 450px;
+  }
+  .navLink {
+    font-size: 2rem;
+    padding: 15px 30px;
+  }
+}
