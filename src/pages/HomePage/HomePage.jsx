@@ -15,7 +15,7 @@ export default function HomePage() {
         <li className={css.navItem}>
           <NavLink to="/gallery" className={css.navLink}>
             <img
-              src="/Icons/avto.webp"
+              src="/Icons/avto.png"
               alt="Gallery Icon"
               className={css.navIcon}
             />
@@ -24,7 +24,7 @@ export default function HomePage() {
         <li className={css.navItem}>
           <NavLink to="/other" className={css.navLink}>
             <img
-              src="/Icons/snip.webp"
+              src="/Icons/shipe.png"
               alt="Other Icon"
               className={css.navIcon}
             />
