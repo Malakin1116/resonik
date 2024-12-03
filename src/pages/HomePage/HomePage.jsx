@@ -2,16 +2,36 @@ import { Outlet, NavLink } from "react-router-dom";
 import css from "./HomePage.module.css";
 
 export default function HomePage() {
-  const getNavLinkClass = ({ isActive }) =>
-    isActive ? `${css.navLink} ${css.active}` : css.navLink;
+  // const getNavLinkClass = ({ isActive }) =>
+  //   isActive ? `${css.navLink} ${css.active}` : css.navLink;
 
   return (
     <div className={css.container}>
-      <img src="/Hero/SG2.png" alt="RESONIK" className={css.artistPhoto} />
+      <img src="/Hero/resonik.jpg" alt="RESONIK" className={css.artistPhoto} />
       <h1 className={css.artistName}>RESONIK</h1>
-      <NavLink to="/gallery" className={getNavLinkClass}>
-        Gallery
-      </NavLink>
+
+      {/* Список навигации */}
+      <ul className={css.navList}>
+        <li className={css.navItem}>
+          <NavLink to="/gallery" className={css.navLink}>
+            <img
+              src="/Icons/avto.webp"
+              alt="Gallery Icon"
+              className={css.navIcon}
+            />
+          </NavLink>
+        </li>
+        <li className={css.navItem}>
+          <NavLink to="/other" className={css.navLink}>
+            <img
+              src="/Icons/snip.webp"
+              alt="Other Icon"
+              className={css.navIcon}
+            />
+          </NavLink>
+        </li>
+      </ul>
+
       <Outlet />
     </div>
   );

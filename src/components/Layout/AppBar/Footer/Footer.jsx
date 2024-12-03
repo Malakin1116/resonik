@@ -10,7 +10,7 @@ export default function Footer() {
       </p>
       <nav className={css.footer_social_links}>
         <a
-          href="https://www.instagram.com/art_aangelina?igsh=Y2szazlhM25kcm9h"
+          href="https://www.instagram.com/resonik_ua/"
           target="_blank"
           rel="noopener noreferrer"
           className={css.footer_social_link}
