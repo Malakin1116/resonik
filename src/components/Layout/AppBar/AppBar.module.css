@@ -61,12 +61,12 @@ button:hover {
 }
 
 .resonik {
-  font-family: "Poppins", sans-serif;
-  font-weight: 800;
+  font-family: "Arial", sans-serif;
+  font-weight: 550;
   font-size: 42px;
   text-align: center;
-  color: #d9d9d9;
-  letter-spacing: 1.6px;
+  color: #62808c;
+  letter-spacing: 1.2px;
   margin: 20px 100px;
   text-transform: uppercase;
   transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
@@ -74,7 +74,7 @@ button:hover {
 
 .resonik:hover {
   transform: scale(1.05);
-  color: #ffffff;
+  color: #6d858f;
   letter-spacing: 2px;
 }
 

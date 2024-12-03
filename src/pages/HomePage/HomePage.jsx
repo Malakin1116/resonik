@@ -7,7 +7,7 @@ export default function HomePage() {
 
   return (
     <div className={css.container}>
-      <img src="/Hero/resonik.jpg" alt="RESONIK" className={css.artistPhoto} />
+      <img src="/Hero/res.png" alt="RESONIK" className={css.artistPhoto} />
       <h1 className={css.artistName}>RESONIK</h1>
 
       {/* Список навигации */}
