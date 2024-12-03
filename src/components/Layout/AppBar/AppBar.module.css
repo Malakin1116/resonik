@@ -72,19 +72,31 @@ button:hover {
   transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
 }
 
-/* .resonik:hover {
+.resonik:hover {
   transform: scale(1.05);
   color: #ffffff;
   letter-spacing: 2px;
-} */
+}
 
 @media (max-width: 600px) {
+  .nav {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-start;
+    padding-left: 15px;
+  }
+
   .resonik {
     display: none;
   }
 
   .ul {
     gap: 25px;
+  }
+
+  li {
+    padding: 10px 8px;
   }
 }
 
