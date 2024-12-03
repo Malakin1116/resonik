@@ -70,6 +70,7 @@
   padding: 0;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  flex-direction: column;
 }
 
 .navIcon {
@@ -83,24 +84,35 @@
   transform: scale(1.1);
 }
 
-.artistPhoto {
-}
-
 .navItem {
-  height: 150px;
   width: 250px;
+  display: flex;
+  flex-direction: column;
+
+  height: 25%;
 }
 
 .navIcon {
   width: 100%;
-  height: 100%;
+
+  height: 175px;
 }
 
-@media (min-width: 600px) {
-  .artistPhoto {
-    max-width: 350px;
-  }
+h3 {
+  height: 25%; /* Задаємо висоту 20% */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #ffffff;
+  margin: 0;
+  text-align: center;
+  background-color: #2c2f2f;
+  border-radius: 5px;
+  padding: 5px;
+}
 
+/* @media (min-width: 600px) {
   .artistPhoto {
     max-width: 450px;
     height: 450px;
@@ -113,9 +125,9 @@
 
   .navIcon {
     width: 100%;
-    height: 100%;
+    height: 175px;
   }
-}
+} */
 
 @media (min-width: 900px) {
   .container {
@@ -131,12 +143,12 @@
   }
 
   .navItem {
-    height: 150px;
+    height: 25%;
     width: 250px;
   }
 
   .navIcon {
     width: 100%;
-    height: 100%;
+    height: 175px;
   }
 }

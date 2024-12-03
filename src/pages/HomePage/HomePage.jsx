@@ -2,15 +2,11 @@ import { Outlet, NavLink } from "react-router-dom";
 import css from "./HomePage.module.css";
 
 export default function HomePage() {
-  // const getNavLinkClass = ({ isActive }) =>
-  //   isActive ? `${css.navLink} ${css.active}` : css.navLink;
-
   return (
     <div className={css.container}>
       <img src="/Hero/newRes.png" alt="RESONIK" className={css.artistPhoto} />
       <h1 className={css.artistName}>RESONIK</h1>
 
-      {/* Список навигации */}
       <ul className={css.navList}>
         <li className={css.navItem}>
           <NavLink to="/gallery" className={css.navLink}>
@@ -19,6 +15,7 @@ export default function HomePage() {
               alt="Gallery Icon"
               className={css.navIcon}
             />
+            <h3 className={css.h3}>.223 .308</h3>
           </NavLink>
         </li>
         <li className={css.navItem}>
@@ -28,6 +25,7 @@ export default function HomePage() {
               alt="Other Icon"
               className={css.navIcon}
             />
+            <h3 className={css.h3}> .223 .308</h3>
           </NavLink>
         </li>
       </ul>
