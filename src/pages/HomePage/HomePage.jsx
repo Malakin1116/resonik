@@ -25,7 +25,7 @@ export default function HomePage() {
               alt="Other Icon"
               className={css.navIcon}
             />
-            <h3 className={css.h3}> .223 .308</h3>
+            <h3 className={css.h3}> .223 .308 .338</h3>
           </NavLink>
         </li>
       </ul>
