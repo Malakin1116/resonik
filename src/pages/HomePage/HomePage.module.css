@@ -6,16 +6,15 @@
   background-color: #1f3539;
   padding: 20px;
   text-align: center;
-
   background: #6b7070;
   background-blend-mode: overlay;
+  gap: 20px;
 }
 
 .artistPhoto {
   width: 100%;
-  max-width: 300px;
+  max-width: 250px;
   height: auto;
-
   border-radius: 25%;
   object-fit: cover;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
@@ -23,92 +22,85 @@
 }
 
 .artistName {
-  position: absolute; /* Убирает элемент из нормального потока */
-  width: 1px; /* Минимальный размер */
-  height: 1px; /* Минимальный размер */
-  overflow: hidden; /* Скрывает содержимое */
-  clip: rect(0, 0, 0, 0); /* Скрывает элемент визуально */
-  white-space: nowrap; /* Предотвращает перенос текста */
-  border: 0; /* Убирает рамки */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
 }
 
-/* Ссылка на галерею */
+.navList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navItem {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px;
+  width: 250px;
+  padding: 0;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navItem:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
 .navLink {
-  display: inline-flex; /* Убирает падинги, кнопка обнимает контент */
+  display: inline-flex;
   justify-content: center;
   align-items: center;
   text-decoration: none;
-  background-color: transparent; /* Прозрачный фон */
-
-  border-radius: 50%; /* Круглая кнопка */
-  width: 100%; /* Фиксированный размер кнопки */
-  height: 100%; /* Фиксированный размер кнопки */
+  background-color: transparent;
+  width: 100%;
+  height: 100%;
+  padding: 0;
   transition: all 0.3s ease;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-.navLink:hover {
-  background-color: #ffffff;
-  color: #1f3539;
-  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-3px);
+.navIcon {
+  width: 80%;
+  height: 80%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
 }
 
-/* Адаптивность для планшетов */
+.navLink:hover .navIcon {
+  transform: scale(1.1);
+}
+
+.artistPhoto {
+  max-width: 450px;
+  height: 450px;
+}
+
+.navItem {
+  height: 150px;
+  width: 250px;
+}
+
+.navIcon {
+  width: 100%;
+  height: 100%;
+}
+
 @media (min-width: 600px) {
   .artistPhoto {
-    max-width: 400px;
-  }
-  .navLink {
-    width: 70px;
-    height: 70px;
-  }
-  .navIcon {
-    width: 50px;
-    height: 50px;
-  }
-}
-
-/* Адаптивность для компьютеров */
-@media (min-width: 900px) {
-  .container {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: flex-start;
-    background-color: #1f3539;
-    padding: 20px;
-    text-align: center;
-    background: #6b7070;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .navLink {
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    text-decoration: none;
-    background-color: transparent;
-    width: 100%;
-    height: 100%;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  }
-
-  .navItem {
-    height: 150px;
-    width: 200px;
-    padding: 0px;
-    border-radius: 15px; /* Закругление углов */
-    overflow: hidden; /* Если есть контент, который выходит за пределы, он будет скрыт */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Плавная анимация */
-  }
-
-  .navItem:hover {
-    transform: translateY(-3px); /* Лёгкое поднятие при наведении */
-    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Усиление тени при наведении */
+    max-width: 350px;
   }
 
   .artistPhoto {
@@ -116,17 +108,37 @@
     height: 450px;
   }
 
-  .navLink {
-    padding: 0px;
+  .navItem {
+    height: 150px;
+    width: 250px;
   }
 
   .navIcon {
     width: 100%;
     height: 100%;
   }
-  .navList {
-    display: flex;
-    gap: 50px;
-    flex-direction: column;
+}
+
+@media (min-width: 900px) {
+  .container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+  }
+
+  .artistPhoto {
+    max-width: 450px;
+    height: 450px;
+  }
+
+  .navItem {
+    height: 150px;
+    width: 250px;
+  }
+
+  .navIcon {
+    width: 100%;
+    height: 100%;
   }
 }

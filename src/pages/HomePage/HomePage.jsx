@@ -22,7 +22,7 @@ export default function HomePage() {
           </NavLink>
         </li>
         <li className={css.navItem}>
-          <NavLink to="/other" className={css.navLink}>
+          <NavLink to="/gallery" className={css.navLink}>
             <img
               src="/Icons/shipe.png"
               alt="Other Icon"

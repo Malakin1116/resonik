@@ -89,7 +89,7 @@
   }
 
   .image {
-    height: 400px;
+    height: 100%;
   }
 }
 
@@ -101,7 +101,7 @@
   }
 
   .image {
-    height: 350px;
+    height: 100%;
   }
 }
 
@@ -113,6 +113,6 @@
   }
 
   .image {
-    height: 400px;
+    height: 100%;
   }
 }
