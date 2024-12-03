@@ -4,63 +4,63 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #b9a895; /* Приємний бежевий фон */
-  color: #fff; /* Білий текст */
-  font-size: 0.9rem; /* Розмір тексту */
-  text-align: center; /* Текст по центру */
+  background-color: #1f3539; /* Темный фон */
+  color: #e0e0e0; /* Мягкий белый текст */
+  font-size: 0.9rem;
+  text-align: center;
 }
 
 .footer_brand {
   font-weight: bold;
-  color: #ff4b5c; /* Яскравий колір бренду */
+  color: #62808c; /* Гармоничный акцент бренда */
 }
 
 .footer_social_links {
   display: flex;
-  gap: 50px; /* Відстань між іконками */
-  margin-top: 10px;
+  gap: 40px; /* Оптимальная дистанция между иконками */
+  margin-top: 15px;
 }
 
 .footer_social_link {
   display: flex;
-  align-items: center; /* Вирівнювання іконки та тексту */
-  gap: 12px; /* Просторіший вигляд */
-  color: #ec162c;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
   text-decoration: none;
-  font-size: 1.2rem;
-  padding: 8px 12px;
-  border-radius: 8px;
+  font-size: 1.1rem;
+  padding: 8px 10px;
+  border-radius: 6px; /* Легче, чем 8px */
   transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
 .footer_social_link:hover {
-  transform: scale(1.2);
-  background-color: #ec162c;
+  transform: scale(1.1); /* Уменьшено увеличение */
+  background-color: #404966; /* Легкий фон при наведении */
   color: #fff;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Тінь для акценту */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); /* Мягкая тень */
 }
 
 .footer_social_icon {
-  width: 32px;
-  height: 32px;
-  color: #ec162c; /* Червоний колір іконки */
+  width: 28px;
+  height: 28px;
+  color: #64d8cb; /* Мягкий бирюзовый акцент */
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer_social_link:hover .footer_social_icon {
-  color: #fff; /* Білий колір іконки при наведенні */
-  transform: scale(1.2); /* Збільшення при наведенні */
+  color: #fff; /* Белый цвет при наведении */
+  transform: scale(1.1); /* Уменьшено увеличение */
 }
 
 @media (max-width: 768px) {
   .footer_social_links {
-    flex-direction: column; /* Вертикальне розташування на мобільних */
-    gap: 20px;
+    flex-direction: column; /* Вертикальное размещение на мобильных */
+    gap: 25px; /* Больше пространства между иконками */
   }
 
   .footer_social_link {
-    font-size: 1rem; /* Зменшений текст */
+    font-size: 1rem; /* Немного меньше текста */
     gap: 8px;
   }
 

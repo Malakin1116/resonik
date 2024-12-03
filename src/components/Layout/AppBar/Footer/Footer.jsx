@@ -5,7 +5,7 @@ export default function Footer() {
   return (
     <footer className={css.footer}>
       <p>
-        © 2024 <span className={css.footer_brand}>ArtAngelina</span>. All rights
+        © 2024 <span className={css.footer_brand}>RESONIK</span>. All rights
         reserved.
       </p>
       <nav className={css.footer_social_links}>
@@ -19,7 +19,7 @@ export default function Footer() {
           <span>Instagram</span>
         </a>
         <a
-          href="https://youtube.com/@angelinabaranovska4932?si=oS7V4QMwqh__7XzT"
+          href="https://youtube.com"
           target="_blank"
           rel="noopener noreferrer"
           className={css.footer_social_link}

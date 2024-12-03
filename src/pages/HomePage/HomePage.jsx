@@ -8,11 +8,11 @@ export default function HomePage() {
   return (
     <div className={css.container}>
       <img
-        src="/HeroGallary/Baranovska.JPG"
-        alt="Baranovska"
+        src="/public/Hero/SG2.png"
+        alt="RESONIK"
         className={css.artistPhoto}
       />
-      <h1 className={css.artistName}>Angelina Baranovska</h1>
+      <h1 className={css.artistName}>RESONIK</h1>
       <NavLink to="/gallery" className={getNavLinkClass}>
         Gallery
       </NavLink>

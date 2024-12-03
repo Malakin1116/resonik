@@ -7,7 +7,8 @@
   background-color: #f5f5f5;
   padding: 20px;
   text-align: center;
-  background: #efe5da;
+  background: #efe5da url("../../../public/Hero/backgroundHome.webp") no-repeat
+    center center;
 }
 
 .artistPhoto {
@@ -21,10 +22,13 @@
 }
 
 .artistName {
-  font-size: 2rem;
-  font-weight: bold;
-  color: #624f3a;
-  margin-bottom: 20px;
+  position: absolute; /* Убирает элемент из нормального потока */
+  width: 1px; /* Минимальный размер */
+  height: 1px; /* Минимальный размер */
+  overflow: hidden; /* Скрывает содержимое */
+  clip: rect(0, 0, 0, 0); /* Скрывает элемент визуально */
+  white-space: nowrap; /* Предотвращает перенос текста */
+  border: 0; /* Убирает рамки */
 }
 
 /* Ссылка на галерею */
@@ -33,7 +37,7 @@
   font-size: 1.5rem;
   font-weight: bold;
   color: #ffffff;
-  background-color: #624f3a;
+  background-color: #1f3539;
   padding: 10px 20px;
   border-radius: 8px;
   transition: all 0.3s ease;
