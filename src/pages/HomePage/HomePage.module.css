@@ -7,8 +7,10 @@
   background-color: #f5f5f5;
   padding: 20px;
   text-align: center;
+
   background: #efe5da url("../../../public/Hero/backgroundHome.webp") no-repeat
     center center;
+  background-color: #1f3539;
 }
 
 .artistPhoto {
