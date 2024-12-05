@@ -4,20 +4,20 @@
   align-items: center;
   justify-content: center;
   padding: 20px;
-  background-color: #1f3539; /* Темный фон */
-  color: #e0e0e0; /* Мягкий белый текст */
+  background-color: #1f3539;
+  color: #e0e0e0;
   font-size: 0.9rem;
   text-align: center;
 }
 
 .footer_brand {
   font-weight: bold;
-  color: #9888f0c7; /* Гармоничный акцент бренда */
+  color: #9888f0c7;
 }
 
 .footer_social_links {
   display: flex;
-  gap: 40px; /* Оптимальная дистанция между иконками */
+  gap: 40px;
   margin-top: 15px;
 }
 
@@ -30,38 +30,38 @@
   font-size: 1.1rem;
   padding: 8px 10px;
   border: 2px solid #00000024;
-  border-radius: 6px; /* Легче, чем 8px */
+  border-radius: 6px;
   transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease,
     box-shadow 0.3s ease;
 }
 
 .footer_social_link:hover {
-  transform: scale(1.1); /* Уменьшено увеличение */
-  background-color: #404966; /* Легкий фон при наведении */
+  transform: scale(1.1);
+  background-color: #404966;
   color: #fff;
-  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15); /* Мягкая тень */
+  box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.15);
 }
 
 .footer_social_icon {
   width: 28px;
   height: 28px;
-  color: #64d8cb; /* Мягкий бирюзовый акцент */
+  color: #64d8cb;
   transition: transform 0.3s ease, color 0.3s ease;
 }
 
 .footer_social_link:hover .footer_social_icon {
-  color: #fff; /* Белый цвет при наведении */
-  transform: scale(1.1); /* Уменьшено увеличение */
+  color: #fff;
+  transform: scale(1.1);
 }
 
 @media (max-width: 768px) {
   .footer_social_links {
-    flex-direction: column; /* Вертикальное размещение на мобильных */
-    gap: 25px; /* Больше пространства между иконками */
+    flex-direction: column;
+    gap: 25px;
   }
 
   .footer_social_link {
-    font-size: 1rem; /* Немного меньше текста */
+    font-size: 1rem;
     gap: 8px;
   }
 
