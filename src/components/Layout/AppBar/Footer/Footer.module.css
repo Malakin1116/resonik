@@ -12,7 +12,7 @@
 
 .footer_brand {
   font-weight: bold;
-  color: #62808c; /* Гармоничный акцент бренда */
+  color: #9888f0c7; /* Гармоничный акцент бренда */
 }
 
 .footer_social_links {
@@ -29,6 +29,7 @@
   text-decoration: none;
   font-size: 1.1rem;
   padding: 8px 10px;
+  border: 2px solid #00000024;
   border-radius: 6px; /* Легче, чем 8px */
   transition: transform 0.3s ease, filter 0.3s ease, background-color 0.3s ease,
     box-shadow 0.3s ease;

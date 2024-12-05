@@ -9,6 +9,7 @@
   padding: 20px;
   text-align: center;
   gap: 20px;
+  padding-bottom: 50px;
 }
 
 .div_artist {
@@ -105,10 +106,12 @@ h2 {
 
 @media (min-width: 900px) {
   .container {
+    height: 75vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 60px;
+    /* padding-bottom: 0; */
   }
 
   .div_artist {
@@ -119,7 +122,6 @@ h2 {
 
   .artistName {
     margin-top: 0px;
-    margin-bottom: 50px;
   }
 
   .artistPhoto {
