@@ -52,27 +52,37 @@ export default function GalleryPage() {
     {
       id: 1,
       src: "/Gallery/1228standart.jpg",
-      title: "1/2-28 223",
+      title: "silencer 1/2-28 223",
       price: "$150",
     },
     {
       id: 2,
       src: "/Gallery/58standart.jpg",
-      title: "5/8-24 308",
+      title: "silencer 5/8-24 308",
       price: "$150",
     },
-    { id: 3, src: "/Gallery/15standart.jpg", title: "15R 308", price: "$150" },
+    {
+      id: 3,
+      src: "/Gallery/15standart.jpg",
+      title: "silencer 15R 308",
+      price: "$150",
+    },
     {
       id: 4,
       src: "/Gallery/58interga.jpg",
-      title: "5/8-24 Integra 308",
+      title: "silencer 5/8-24 Integra 308",
       price: "$300",
     },
-    { id: 5, src: "/Gallery/14lstandart.jpg", title: "15L 308", price: "$150" },
+    {
+      id: 5,
+      src: "/Gallery/14lstandart.jpg",
+      title: "silencer 14L 308",
+      price: "$150",
+    },
     {
       id: 6,
       src: "/Gallery/1228standart.jpg",
-      title: "1/2-28 223",
+      title: "silencer 1/2-28 223",
       price: "$150",
     },
   ];
