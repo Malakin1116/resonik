@@ -21,7 +21,7 @@ export default function HomePage() {
               alt="Gallery Icon"
               className={css.navIcon}
             />
-            <h3 className={css.h3}>Silencer .223 .308</h3>
+            <h2 className={css.h2}>Silencer .223 .308</h2>
           </NavLink>
         </li>
         <li className={css.navItem}>
@@ -31,7 +31,7 @@ export default function HomePage() {
               alt="Other Icon"
               className={css.navIcon}
             />
-            <h3 className={css.h3}>Silencer .223 .308 .338</h3>
+            <h2 className={css.h2}>Silencer .223 .308 .338</h2>
           </NavLink>
         </li>
       </ul>
