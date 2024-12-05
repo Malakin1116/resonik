@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 20px 15px 50px;
 }
 
 .title {
@@ -44,7 +43,7 @@
 
 .image {
   width: 100%;
-  height: 300px;
+  height: auto;
   object-fit: cover;
   object-position: center;
   border-bottom: 1px solid #ccc;
@@ -67,20 +66,105 @@
   color: #35723a9d;
 }
 
+.buyButton {
+  background-color: #35723a9d;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buyButton:hover {
+  background-color: #285521;
+}
+
+/* Корзина */
+.cart {
+  width: 100%;
+  max-width: 600px;
+  background: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.cart h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: rgba(70, 70, 70, 0.8);
+  margin-bottom: 15px;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart ul li {
+  font-size: 1.2rem;
+  color: rgba(70, 70, 70, 0.8);
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.total {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-top: 10px;
+  color: rgba(70, 70, 70, 0.8);
+  text-align: center;
+}
+
+.removeButton {
+  background-color: #ff4d4d;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-left: 10px;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.removeButton:hover {
+  background-color: #cc0000;
+}
+
+.checkoutButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-top: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+.checkoutButton:hover {
+  background-color: #0056b3;
+}
+
 /* Адаптивность для маленьких экранов (мобильные устройства) */
 @media (max-width: 600px) {
-  .container {
-    width: 100%;
-    padding: 0px;
-  }
-
-  .card {
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-
   .title {
     font-size: 2rem;
+  }
+
+  .grid {
+    gap: 20px;
   }
 
   .card {
@@ -88,20 +172,28 @@
     max-width: 100%;
   }
 
-  .image {
-    height: 100%;
+  .cart {
+    padding: 15px;
+  }
+
+  .cart h2 {
+    font-size: 1.5rem;
+  }
+
+  .cart ul li {
+    font-size: 1rem;
+  }
+
+  .checkoutButton {
+    font-size: 0.9rem;
   }
 }
 
 /* Адаптивность для планшетов */
 @media (min-width: 600px) and (max-width: 900px) {
   .card {
-    flex: 1 1 calc(50% - 50px);
-    max-width: calc(50% - 50px);
-  }
-
-  .image {
-    height: 100%;
+    flex: 1 1 calc(50% - 30px);
+    max-width: calc(50% - 30px);
   }
 }
 
@@ -110,9 +202,5 @@
   .card {
     flex: 1 1 calc(33.33% - 50px);
     max-width: calc(33.33% - 50px);
-  }
-
-  .image {
-    height: 100%;
   }
 }
