@@ -1,7 +1,15 @@
 .container {
   width: 100%;
   margin: 0 auto;
-  background: #efe5da;
+
+  background: linear-gradient(
+    to bottom,
+    #1f3539,
+    /* Темный цвет сверху */ #3a4e50 30%,
+    /* Промежуточный цвет для смягчения */ #6b7b7e 70%,
+    /* Мягкий серый, ближе к низу */ #d6d6d6 100%
+      /* Менее светлый оттенок для низа */
+  );
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,7 +19,7 @@
   text-align: center;
   font-size: 3rem;
   font-weight: bold;
-  color: rgba(70, 70, 70, 0.8);
+  color: rgba(255, 255, 255, 0.8);
   margin-bottom: 20px;
 }
 
@@ -28,8 +36,8 @@
   max-width: calc(33.33% - 50px);
   border-radius: 10px;
   overflow: hidden;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  background: linear-gradient(to right, #d6d6d654 100%, #1f3539);
   height: auto;
   display: flex;
   flex-direction: column;
@@ -56,18 +64,18 @@
 
 .info .title {
   font-size: 1.5rem;
-  color: rgba(70, 70, 70, 0.8);
+  color: #ffffff;
   margin: 10px 0 5px;
 }
 
 .info .price {
   font-size: 1.2rem;
   font-weight: bold;
-  color: #35723a9d;
+  color: #ffffff9d;
 }
 
 .buyButton {
-  background-color: #35723a9d;
+  background-color: #5666579d;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -79,7 +87,7 @@
 }
 
 .buyButton:hover {
-  background-color: #285521;
+  background-color: #626d60;
 }
 
 /* Корзина */
@@ -202,5 +210,8 @@
   .card {
     flex: 1 1 calc(33.33% - 50px);
     max-width: calc(33.33% - 50px);
+  }
+  .title {
+    margin-bottom: 50px;
   }
 }

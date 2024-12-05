@@ -3,12 +3,29 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  background-color: #1f3539;
+  background: linear-gradient(to bottom, #1f3539, rgb(0 0 0 / 92%) 70%),
+    url(/path-to-your-background-image.jpg) no-repeat center center;
+  background-size: cover;
   padding: 20px;
   text-align: center;
-  background: #6b7070;
-  background-blend-mode: overlay;
   gap: 20px;
+}
+
+.div_artist {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.artistName {
+  font-family: "Arial", sans-serif;
+  font-weight: 550;
+  font-size: 42px;
+  text-align: center;
+  color: #ffffff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
 }
 
 .artistPhoto {
@@ -17,18 +34,6 @@
   height: auto;
   border-radius: 20%;
   object-fit: cover;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  margin-bottom: 20px;
-}
-
-.artistName {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 .navList {
@@ -74,7 +79,7 @@
 }
 
 .navIcon {
-  width: 80%;
+  width: 100%;
   height: 80%;
   object-fit: cover;
   transition: transform 0.3s ease;
@@ -84,22 +89,8 @@
   transform: scale(1.1);
 }
 
-.navItem {
-  width: 250px;
-  display: flex;
-  flex-direction: column;
-
-  height: 25%;
-}
-
-.navIcon {
-  width: 100%;
-
-  height: 175px;
-}
-
 h3 {
-  height: 25%; /* Задаємо висоту 20% */
+  height: 25%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -107,7 +98,6 @@ h3 {
   color: #ffffff;
   margin: 0;
   text-align: center;
-
   border-radius: 5px;
   padding: 5px;
 }
@@ -139,5 +129,16 @@ h3 {
   .navIcon {
     width: 100%;
     height: 175px;
+  }
+  .artistName {
+    font-family: "Arial", sans-serif;
+    font-weight: 550;
+    font-size: 42px;
+    text-align: center;
+    color: #ffffff;
+    letter-spacing: 12px;
+    margin-left: 30px;
+    text-transform: uppercase;
+    transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
   }
 }

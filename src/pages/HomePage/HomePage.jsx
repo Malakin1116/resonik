@@ -4,8 +4,14 @@ import css from "./HomePage.module.css";
 export default function HomePage() {
   return (
     <div className={css.container}>
-      <img src="/Hero/newRes.png" alt="RESONIK" className={css.artistPhoto} />
-      <h1 className={css.artistName}>RESONIK</h1>
+      <div className={css.div_artist}>
+        <img
+          src="/Hero/resonik_transparent.png"
+          alt="RESONIK"
+          className={css.artistPhoto}
+        />
+        <h1 className={css.artistName}>RESONIK</h1>
+      </div>
 
       <ul className={css.navList}>
         <li className={css.navItem}>
