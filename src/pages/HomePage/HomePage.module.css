@@ -30,7 +30,7 @@
 
 .artistPhoto {
   width: 100%;
-  max-width: 250px;
+  max-width: 350px;
   height: auto;
   border-radius: 20%;
   object-fit: cover;
