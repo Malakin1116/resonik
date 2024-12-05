@@ -7,6 +7,7 @@ import Layout from "../../components/Layout/Layout";
 import RestrictedRoute from "../../components/RestrictedRoute/RestrictedRoute";
 
 const HomePage = lazy(() => import("../HomePage/HomePage"));
+const CartPage = lazy(() => import("../CartPage/CartPage"));
 const NotFoundPage = lazy(() => import("../NotFounderPage/NotFounderPage"));
 const RegistrationPage = lazy(() =>
   import("../RagistrationPage/RegistrationPage")
@@ -46,6 +47,8 @@ export default function App() {
             />
 
             <Route path="gallery" element={<GalleryPage />} />
+
+            <Route path="cart" element={<CartPage />} />
 
             <Route path="*" element={<NotFoundPage />} />
           </Route>

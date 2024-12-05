@@ -1,0 +1,130 @@
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  background: linear-gradient(
+    to bottom,
+    #1f3539,
+    #3a4e50 30%,
+    #6b7b7e 70%,
+    #d6d6d6 100%
+  );
+  min-height: 100vh; /* Корзина будет занимать весь экран */
+}
+
+.cart {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  max-width: 550px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.cart h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #fff;
+  text-align: center;
+  background-color: #3a4e50;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 10px 10px 0 0;
+}
+
+.cart ul {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 10px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.cartItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+  font-size: 1rem;
+  color: #333;
+}
+
+.cartItem:hover {
+  background-color: #f5f5f5;
+  transform: scale(1.01);
+}
+
+.cartItem button {
+  background-color: #ff6b6b;
+  color: #fff;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s ease;
+}
+
+.cartItem button:hover {
+  background-color: #ff4d4d;
+}
+
+.total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 15px 20px;
+  margin-top: 20px;
+  background-color: #3a4e50;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.checkoutButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease;
+  margin-top: 20px;
+}
+
+.checkoutButton:hover {
+  background-color: #218838;
+}
+
+.emptyCartMessage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 150px;
+  font-size: 1.2rem;
+  color: #fff;
+  background: #3a4e50;
+  border-radius: 5px;
+  text-align: center;
+}

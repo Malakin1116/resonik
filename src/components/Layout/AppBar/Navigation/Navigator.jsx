@@ -20,6 +20,12 @@ export default function Navigation() {
           Gallery
         </NavLink>
       </li>
+
+      <li className={css.li}>
+        <NavLink to="/cart" className={getNavLinkClass}>
+          Cart
+        </NavLink>
+      </li>
     </>
   );
 }

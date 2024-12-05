@@ -1,6 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 import contactReducer from "./contacts/slice";
 import filterReducer from "./filters/slice";
+import { cartReducer } from "./cart/slice";
 import { authReducer } from "./auth/slice";
 import persistReducer from "redux-persist/es/persistReducer";
 import storage from "redux-persist/lib/storage";
@@ -18,6 +19,7 @@ export const store = configureStore({
     contacts: contactReducer,
     filters: filterReducer,
     auth: persistReducer(authConfig, authReducer),
+    cart: cartReducer,
   },
 });
 
