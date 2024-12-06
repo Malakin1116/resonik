@@ -24,7 +24,7 @@ export default function GalleryPage() {
             <img src={src} alt={title} className={css.image} />
             <div className={css.info}>
               <h2 className={css.title}>{title}</h2>
-              <p className={css.price}>{price}</p>
+              <h3 className={css.price}>{price}</h3>
               <button
                 className={css.buyButton}
                 onClick={() => handleAddToCart(id)}
