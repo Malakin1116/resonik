@@ -28,7 +28,7 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   overflow: hidden;
   margin-top: 50px;
-  justify-content: space-between; /* Для выравнивания содержимого */
+  justify-content: space-between;
   position: relative;
 }
 
@@ -50,7 +50,7 @@
   padding: 0;
   margin: 0;
   list-style: none;
-  flex-grow: 1; /* Список занимает все доступное место */
+  flex-grow: 1;
   justify-content: flex-start;
 }
 
@@ -137,7 +137,7 @@
   text-transform: uppercase;
   transition: background-color 0.3s ease;
   margin-top: 20px;
-  align-self: stretch; /* Кнопка растягивается по ширине */
+  align-self: stretch;
   position: relative;
 }
 

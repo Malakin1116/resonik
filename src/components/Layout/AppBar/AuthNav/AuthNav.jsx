@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { NavLink } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
-import { FaSignInAlt, FaUserPlus } from "react-icons/fa"; // Добавляем иконки для SignIn и SignUp
+import { FaSignInAlt, FaUserPlus } from "react-icons/fa"; 
 import clsx from "clsx";
 import css from "./AuthNav.module.css";
 
