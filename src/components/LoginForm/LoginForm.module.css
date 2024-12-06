@@ -1,77 +1,79 @@
-/* Основной контейнер */
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh;
-  background-color: #f5eae0; /* Нежный бежевый фон */
+  height: 100vh;
+  background: linear-gradient(to bottom, #243447, #1c2a38 80%);
+  padding: 20px;
 }
 
-/* Стили для формы */
 .form {
   display: flex;
   flex-direction: column;
-  width: 320px; /* Немного больше пространства */
+  width: 320px;
   padding: 25px;
-  border: 1px solid #d3c4b5; /* Светлый контур */
-  border-radius: 8px; /* Мягкие углы */
-  background-color: #fffaf4; /* Кремовый фон */
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Лёгкая тень */
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 10px;
+  background: rgba(40, 50, 60, 0.9);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
 }
 
-/* Стили для меток и полей */
 .label {
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px; /* Увеличенный отступ */
+  margin-bottom: 20px;
 }
 
 .labelText {
   margin-bottom: 5px;
-  font-weight: bold;
-  color: #6d4c41; /* Тёплый коричневый цвет */
+  font-weight: 600;
+  color: #e4e4e4;
+  font-size: 15px;
 }
 
 .input {
-  padding: 10px;
-  font-size: 14px;
-  border: 1px solid #cbbeb3; /* Нежный оттенок границ */
-  border-radius: 5px;
-  background-color: #fdfaf6; /* Светлый кремовый фон */
-  color: #5d4037; /* Коричневый текст */
-  transition: border-color 0.3s ease;
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 6px;
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ffffff;
+  transition: border-color 0.3s ease, background-color 0.3s ease;
 }
 
 .input:focus {
-  border-color: #6d4c41; /* Акцент при фокусе */
+  border-color: #5dade2;
+  background-color: rgba(255, 255, 255, 0.2);
   outline: none;
 }
 
-/* Стили для сообщений об ошибках */
 .errorMessage {
-  color: #d9534f;
-  font-size: 12px;
+  color: #e74c3c;
+  font-size: 13px;
   margin-top: 5px;
 }
 
-/* Кнопка отправки */
 .button {
   padding: 12px;
-  font-size: 15px;
-  background-color: #6d4c41; /* Тёмно-коричневый фон */
-  color: #fff; /* Белый текст */
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #5dade2;
+  color: #ffffff;
   border: none;
-  border-radius: 5px;
+  border-radius: 6px;
   cursor: pointer;
-  transition: background-color 0.3s ease, transform 0.2s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease,
+    box-shadow 0.3s ease;
 }
 
 .button:hover {
-  background-color: #5d4037; /* Более тёмный оттенок */
-  transform: translateY(-2px); /* Лёгкий эффект подъёма */
+  background-color: #4a90d6;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(90, 173, 226, 0.5);
 }
 
 .button:active {
-  background-color: #4e342e; /* Ещё темнее при нажатии */
+  background-color: #4178b3;
   transform: translateY(0);
+  box-shadow: none;
 }

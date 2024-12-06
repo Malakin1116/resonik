@@ -7,6 +7,7 @@
     url(/path-to-your-background-image.jpg) no-repeat center center;
   background-size: cover;
   padding: 20px;
+  margin-top: 77px;
   text-align: center;
   gap: 20px;
   padding-bottom: 50px;
@@ -113,6 +114,7 @@ h2 {
     align-items: center;
     justify-content: center;
     gap: 60px;
+    margin-top: 77px;
     /* padding-bottom: 0; */
   }
 
