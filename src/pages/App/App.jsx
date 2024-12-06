@@ -46,7 +46,7 @@ export default function App() {
               element={<RestrictedRoute component={<LoginPage />} />}
             />
 
-            <Route path="gallery" element={<GalleryPage />} />
+            <Route path="catalog" element={<GalleryPage />} />
 
             <Route path="cart" element={<CartPage />} />
 

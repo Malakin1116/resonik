@@ -1,4 +1,3 @@
-/* Базові стилі */
 .container {
   width: 100%;
   margin: 0 auto;
@@ -15,7 +14,7 @@
   font-weight: 700;
   font-size: 42px;
   text-align: center;
-  color: #e3f2fd; /* Светло-голубой */
+  color: #e3f2fd;
   letter-spacing: 2px;
   text-transform: uppercase;
   transition: transform 0.3s ease, color 0.3s ease, letter-spacing 0.3s ease;
@@ -49,7 +48,6 @@
 
 .image {
   width: 100%;
-
   object-fit: cover;
 }
 
@@ -97,7 +95,34 @@
   margin: 5px 0;
 }
 
-/* Адаптивність */
+.filterButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.filterButtons button {
+  background-color: #546e7a;
+  color: #eceff1;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.filterButtons button:hover {
+  background-color: #37474f;
+  transform: translateY(-2px);
+}
+
+.filterButtons button:active {
+  transform: translateY(0);
+}
+
 @media (max-width: 600px) {
   .title {
     font-size: 1.5rem;
@@ -125,6 +150,11 @@
     font-size: 1.2rem;
     padding: 8px;
   }
+
+  .filterButtons button {
+    width: 100%;
+    font-size: 0.9rem;
+  }
 }
 
 @media (min-width: 600px) and (max-width: 1024px) {
@@ -132,6 +162,7 @@
     flex: 1 1 calc(50% - 15px);
     max-width: calc(50% - 15px);
   }
+
   .image {
     height: 450px;
   }
@@ -141,6 +172,7 @@
   .image {
     height: 450px;
   }
+
   .card {
     flex: 1 1 calc(33.33% - 20px);
     max-width: calc(33.33% - 20px);

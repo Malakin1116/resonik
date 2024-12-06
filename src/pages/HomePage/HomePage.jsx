@@ -15,7 +15,7 @@ export default function HomePage() {
 
       <ul className={css.navList}>
         <li className={css.navItem}>
-          <NavLink to="/gallery" className={css.navLink}>
+          <NavLink to="/catalog" className={css.navLink}>
             <img
               src="/Icons/avto.png"
               alt="Gallery Icon"
@@ -25,7 +25,7 @@ export default function HomePage() {
           </NavLink>
         </li>
         <li className={css.navItem}>
-          <NavLink to="/gallery" className={css.navLink}>
+          <NavLink to="/catalog" className={css.navLink}>
             <img
               src="/Icons/shipe.png"
               alt="Other Icon"
