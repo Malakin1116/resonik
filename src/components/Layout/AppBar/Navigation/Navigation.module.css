@@ -1,81 +1,98 @@
-/* Стили списка */
 .ul {
-  padding: 20px 0;
+  padding: 15px 0px;
   width: 100%;
-  background-color: #1f1f1f; /* Темный фон */
+
   display: flex;
-  gap: 20px; /* Расстояние между элементами */
-  justify-content: center; /* Центрирование элементов */
+  gap: 20px;
+  justify-content: center;
   margin: 0;
 }
 
-/* Стили элементов списка */
-li {
-  border: 1px solid rgba(255, 255, 255, 0.1); /* Легкая граница */
+.li {
+  border: 1px solid rgba(255, 255, 255, 0.1);
   list-style-type: none;
-  border-radius: 8px; /* Скругленные углы */
+  border-radius: 8px;
   background: linear-gradient(
     135deg,
     rgba(50, 50, 50, 0.8),
     rgba(70, 70, 70, 0.8)
-  ); /* Градиентный фон */
+  );
   padding: 10px 18px;
   font-size: 1rem;
-  font-family: "Roboto", sans-serif; /* Шрифт Roboto */
-  color: #e0e0e0; /* Светлый текст */
+  font-family: "Roboto", sans-serif;
+  color: #e0e0e0;
   text-align: center;
-  position: relative; /* Для псевдоэлементов */
-  transition: all 0.3s ease; /* Плавный переход */
+  position: relative;
+  transition: all 0.3s ease;
 }
 
-/* Эффект при наведении на li */
-li:hover {
+.li:hover {
   background: linear-gradient(
     135deg,
     rgba(80, 80, 80, 0.9),
     rgba(100, 100, 100, 0.9)
-  ); /* Светлый градиент */
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3); /* Глубокая тень */
-  transform: translateY(-3px); /* Легкое поднятие */
+  );
+  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.3);
+  transform: translateY(-3px);
 }
 
-/* Стили ссылок */
 .link {
-  color: #d9d9d9; /* Светлый серый цвет текста */
+  color: #d9d9d9;
   font-weight: 600;
-  text-decoration: none; /* Убираем подчеркивание */
-  position: relative; /* Для псевдоэлемента */
-  display: inline-block; /* Для корректной работы псевдоэлемента */
-  transition: color 0.3s ease; /* Плавный переход цвета */
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  transition: color 0.3s ease;
 }
 
-/* Псевдоэлемент полоски */
-.link::after {
-  content: "";
+.icon {
+  font-size: 1.5rem;
+}
+
+.cartBadge {
   position: absolute;
-  bottom: 0; /* Полоска снизу текста */
-  left: 0;
-  width: 0; /* Полоска скрыта изначально */
-  height: 2px; /* Толщина полоски */
-  background-color: #4f9b92; /* Цвет полоски */
-  transition: width 0.3s ease; /* Плавное растяжение полоски */
+  top: -15px;
+  right: -25px;
+  background-color: #ff6b6b;
+  color: white;
+  border-radius: 50%;
+  font-size: 0.8rem;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
-/* Эффект при наведении на ссылку */
-.link:hover::after {
-  width: 100%; /* Полоска растягивается по ширине */
-}
+@media (max-width: 600px) {
+  .text {
+    display: none;
+  }
 
-/* Медиа-запросы для планшетов */
-@media (min-width: 600px) and (max-width: 900px) {
-  .ul {
-    gap: 40px; /* Увеличиваем расстояние между элементами */
+  .icon {
+    font-size: 2rem;
+  }
+
+  .cartBadge {
+    top: -15px;
+    right: 3px;
+    width: 18px;
+    height: 18px;
+    font-size: 0.75rem;
   }
 }
 
-/* Медиа-запросы для компьютеров */
+@media (min-width: 600px) and (max-width: 900px) {
+  .ul {
+    gap: 25px;
+  }
+}
+
 @media (min-width: 900px) {
   .ul {
-    gap: 100px; /* Увеличиваем расстояние между элементами */
+    gap: 25px;
   }
 }

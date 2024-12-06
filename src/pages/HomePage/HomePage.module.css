@@ -36,6 +36,8 @@
   height: auto;
   border-radius: 20%;
   object-fit: cover;
+  position: relative;
+  left: -10px;
 }
 
 .navList {
@@ -106,7 +108,7 @@ h2 {
 
 @media (min-width: 900px) {
   .container {
-    height: 75vh;
+    height: 100vh;
     flex-direction: row;
     align-items: center;
     justify-content: center;

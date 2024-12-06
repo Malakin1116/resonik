@@ -1,10 +1,15 @@
 .header {
   background-color: #1f3539;
-  padding: 10px 20px;
+  padding: 10px auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
 }
 
 .nav {
@@ -31,7 +36,7 @@ li {
 
 a {
   text-decoration: none;
-  color: #000000;
+  color: #ffffff;
   font-size: 18px;
   font-weight: 600;
   letter-spacing: 1px;
@@ -78,13 +83,16 @@ button:hover {
   letter-spacing: 2px;
 }
 
+body {
+  margin-top: 60px;
+}
+
 @media (max-width: 600px) {
   .nav {
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: flex-start;
-    padding-left: 15px;
+    justify-content: center;
   }
 
   .resonik {
