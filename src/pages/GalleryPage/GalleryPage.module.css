@@ -132,6 +132,9 @@
     flex: 1 1 calc(50% - 15px);
     max-width: calc(50% - 15px);
   }
+  .image {
+    height: 450px;
+  }
 }
 
 @media (min-width: 1024px) {

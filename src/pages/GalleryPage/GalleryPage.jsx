@@ -10,7 +10,7 @@ export default function GalleryPage() {
 
   const handleAddToCart = (id) => {
     const item = images.find((image) => image.id === id);
-    dispatch(addItemToCart(item)); // Добавляем товар в глобальную корзину через Redux
+    dispatch(addItemToCart(item));
     toast.success(`${item.title} добавлен в корзину!`);
   };
 
