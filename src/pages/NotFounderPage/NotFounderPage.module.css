@@ -4,7 +4,7 @@
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #f7f7f7; /* Светлый фон */
+  background-color: #f7f7f7; 
   text-align: center;
   padding: 20px;
 }
@@ -12,9 +12,9 @@
 .title {
   font-size: 5rem;
   font-weight: bold;
-  color: #ff4b5c; /* Красный акцент */
+  color: #ff4b5c; 
   margin-bottom: 20px;
-  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); /* Легкая тень */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2); 
 }
 
 .message {
@@ -26,7 +26,7 @@
 
 .link {
   display: inline-block;
-  background-color: #4caf50; /* Зеленая кнопка */
+  background-color: #4caf50;
   color: white;
   padding: 10px 20px;
   border-radius: 5px;
@@ -37,15 +37,15 @@
 }
 
 .link:hover {
-  background-color: #388e3c; /* Более темный зеленый */
-  transform: translateY(-3px); /* Эффект подъема */
+  background-color: #388e3c; 
+  transform: translateY(-3px); 
 }
 
 .link:active {
-  transform: translateY(0); /* Убираем подъем при клике */
+  transform: translateY(0); 
 }
 
-/* Адаптивность */
+
 @media (max-width: 600px) {
   .title {
     font-size: 4rem;
