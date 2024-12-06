@@ -24,7 +24,7 @@ export default function Navigation() {
       </li>
 
       <li className={css.li}>
-        <NavLink to="/catalog" className={getNavLinkClass}>
+        <NavLink to="/catalog/standard" className={getNavLinkClass}>
           <FaImages className={css.icon} />
           <span className={css.text}>Catalog</span>
         </NavLink>

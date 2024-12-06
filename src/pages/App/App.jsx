@@ -18,6 +18,9 @@ const GalleryPage = lazy(() => import("../GalleryPage/GalleryPage"));
 
 import { selectUserDataIsRefreshing } from "../../redux/auth/selectors";
 
+import StandardGallery from "../../components/StandardGallery/StandardGallery";
+import ProGallery from "../../components/ProGallery/ProGallery";
+
 export default function App() {
   const dispatch = useDispatch();
 
@@ -46,7 +49,10 @@ export default function App() {
               element={<RestrictedRoute component={<LoginPage />} />}
             />
 
-            <Route path="catalog" element={<GalleryPage />} />
+            <Route path="catalog" element={<GalleryPage />}>
+              <Route path="standard" element={<StandardGallery />} />
+              <Route path="pro" element={<ProGallery />} />
+            </Route>
 
             <Route path="cart" element={<CartPage />} />
 
