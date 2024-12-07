@@ -31,7 +31,7 @@ export default function HomePage() {
               alt="Other Icon"
               className={css.navIcon}
             />
-            <h2 className={css.h2}>Silencer .223 .308 .338</h2>
+            <h2 className={css.h2}>Silencer PRO .223 .308 .338</h2>
           </NavLink>
         </li>
       </ul>
