@@ -118,7 +118,12 @@
   transform: translateY(0);
 }
 
-/* Адаптивність для мобільних пристроїв */
+.description {
+  font-size: 1rem;
+  color: #b0bec5;
+  margin: 10px 0;
+}
+
 @media (max-width: 600px) {
   .title {
     font-size: 1.5rem;

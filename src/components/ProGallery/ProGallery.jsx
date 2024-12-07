@@ -19,11 +19,12 @@ export default function ProGallery() {
   return (
     <div className={css.grid}>
       <ToastContainer position="top-right" style={{ marginTop: "72px" }} />
-      {proItems.map(({ id, src, title, price }) => (
+      {proItems.map(({ id, src, title, price, description }) => (
         <div key={id} className={css.card}>
           <img src={src} alt={title} className={css.image} />
           <div className={css.info}>
             <h2 className={css.title}>{title}</h2>
+            <p className={css.description}>{description}</p>
             <h3 className={css.price}>{price}</h3>
             <button
               className={css.buyButton}
