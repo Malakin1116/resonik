@@ -18,33 +18,50 @@ export default function Navigation() {
   const isCatalogActive = location.pathname.startsWith("/catalog");
 
   return (
-    <ul className={css.ul}>
-      <li className={css.li}>
-        <NavLink to="/" className={getNavLinkClass} end>
-          <FaHome className={css.icon} />
-          <span className={css.text}>Home</span>
-        </NavLink>
-      </li>
+    <nav role="navigation" aria-label="Main Navigation">
+      <ul className={css.ul}>
+        <li className={css.li}>
+          <NavLink
+            to="/"
+            className={getNavLinkClass}
+            end
+            aria-label="Go to Home"
+          >
+            <FaHome className={css.icon} aria-hidden="true" />
+            <span className={css.text}>Home</span>
+          </NavLink>
+        </li>
 
-      <li className={css.li}>
-        <NavLink
-          to="/catalog/standard"
-          className={() => clsx(css.link, isCatalogActive && css.isActive)}
-        >
-          <FaImages className={css.icon} />
-          <span className={css.text}>Catalog</span>
-        </NavLink>
-      </li>
+        <li className={css.li}>
+          <NavLink
+            to="/catalog/standard"
+            className={() => clsx(css.link, isCatalogActive && css.isActive)}
+            aria-label="Go to Catalog"
+          >
+            <FaImages className={css.icon} aria-hidden="true" />
+            <span className={css.text}>Catalog</span>
+          </NavLink>
+        </li>
 
-      <li className={css.li}>
-        <NavLink to="/cart" className={getNavLinkClass}>
-          <FaShoppingCart className={css.icon} />
-          {totalItems > 0 && (
-            <span className={css.cartBadge}>{totalItems}</span>
-          )}
-          <span className={css.text}>Cart</span>
-        </NavLink>
-      </li>
-    </ul>
+        <li className={css.li}>
+          <NavLink
+            to="/cart"
+            className={getNavLinkClass}
+            aria-label="Go to Cart"
+          >
+            <FaShoppingCart className={css.icon} aria-hidden="true" />
+            {totalItems > 0 && (
+              <span
+                className={css.cartBadge}
+                aria-label={`Cart has ${totalItems} items`}
+              >
+                {totalItems}
+              </span>
+            )}
+            <span className={css.text}>Cart</span>
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 }

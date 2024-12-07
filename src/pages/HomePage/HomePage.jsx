@@ -7,34 +7,44 @@ export default function HomePage() {
       <div className={css.div_artist}>
         <img
           src="/Hero/resonik_transparent.png"
-          alt="RESONIK"
+          alt="RESONIK logo - High-Quality Silencers"
           className={css.artistPhoto}
         />
         <h1 className={css.artistName}>RESONIK</h1>
       </div>
 
-      <ul className={css.navList}>
-        <li className={css.navItem}>
-          <NavLink to="catalog/standard" className={css.navLink}>
-            <img
-              src="/Icons/avto.png"
-              alt="Gallery Icon"
-              className={css.navIcon}
-            />
-            <h2 className={css.h2}>Silencer .223 .308</h2>
-          </NavLink>
-        </li>
-        <li className={css.navItem}>
-          <NavLink to="/catalog/pro" className={css.navLink}>
-            <img
-              src="/Icons/shipe.png"
-              alt="Other Icon"
-              className={css.navIcon}
-            />
-            <h2 className={css.h2}>Silencer PRO .223 .308 .338</h2>
-          </NavLink>
-        </li>
-      </ul>
+      <nav>
+        <ul className={css.navList}>
+          <li className={css.navItem}>
+            <NavLink
+              to="catalog/standard"
+              className={css.navLink}
+              aria-label="Go to Standard Silencers Catalog"
+            >
+              <img
+                src="/Icons/avto.png"
+                alt="Standard Silencers Icon"
+                className={css.navIcon}
+              />
+              <h2 className={css.h2}>Silencer .223 .308</h2>
+            </NavLink>
+          </li>
+          <li className={css.navItem}>
+            <NavLink
+              to="/catalog/pro"
+              className={css.navLink}
+              aria-label="Go to PRO Silencers Catalog"
+            >
+              <img
+                src="/Icons/shipe.png"
+                alt="PRO Silencers Icon"
+                className={css.navIcon}
+              />
+              <h2 className={css.h2}>Silencer PRO .223 .308 .338</h2>
+            </NavLink>
+          </li>
+        </ul>
+      </nav>
 
       <Outlet />
     </div>
