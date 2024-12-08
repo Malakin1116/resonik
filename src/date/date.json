@@ -5,7 +5,7 @@
     "title": "5/8-24 308",
     "price": "$300",
     "category": "pro",
-    "description": "High-quality muzzle device designed to reduce recoil and improve shooting stability."
+    "description": "Suppressor with 18-Chamber Separation. Reduces sound. Weight: 550 g. Triple quality and alignment check."
   },
   {
     "id": 2,
@@ -13,7 +13,7 @@
     "title": "1/2-28 223",
     "price": "$300",
     "category": "pro",
-    "description": "High-quality muzzle device designed to reduce recoil and improve shooting stability."
+    "description": "Suppressor with 16-Chamber Separation. Reduces sound. Weight: 450 g. Triple quality and alignment check."
   },
   {
     "id": 3,
@@ -21,7 +21,7 @@
     "title": "15R 308",
     "price": "$150",
     "category": "standard",
-    "description": "High-quality muzzle device designed to reduce recoil and improve shooting stability."
+    "description": "Suppressor with 18-Chamber Separation. Reduces sound. Weight: 550 g. Triple quality and alignment check."
   },
   {
     "id": 4,
@@ -29,7 +29,7 @@
     "title": "14L 308",
     "price": "$150",
     "category": "standard",
-    "description": "High-quality muzzle device designed to reduce recoil and improve shooting stability."
+    "description": "Suppressor with 18-Chamber Separation. Reduces sound. Weight: 550 g. Triple quality and alignment check."
   },
   {
     "id": 5,
@@ -37,7 +37,7 @@
     "title": "1/2-28 223",
     "price": "$150",
     "category": "standard",
-    "description": "High-quality muzzle device designed to reduce recoil and improve shooting stability."
+    "description": "Suppressor with 16-Chamber Separation. Reduces sound. Weight: 450 g. Triple quality and alignment check."
   },
   {
     "id": 6,
@@ -45,6 +45,6 @@
     "title": "5/8-24 308",
     "price": "$150",
     "category": "standard",
-    "description": "High-quality muzzle device designed to reduce recoil and improve shooting stability."
+    "description": "Suppressor with 18-Chamber Separation. Reduces sound. Weight: 550 g. Triple quality and alignment check."
   }
 ]
