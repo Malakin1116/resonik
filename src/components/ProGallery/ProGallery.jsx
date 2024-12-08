@@ -11,7 +11,7 @@ export default function ProGallery() {
   const handleAddToCart = (id) => {
     const item = images.find((image) => image.id === id);
     dispatch(addItemToCart(item));
-    toast.success(`${item.title} добавлен в корзину!`);
+    toast.success(`${item.title} add to cart!`);
   };
 
   const proItems = images.filter((item) => item.category === "pro");
