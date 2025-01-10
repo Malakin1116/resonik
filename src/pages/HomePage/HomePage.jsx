@@ -26,7 +26,7 @@ export default function HomePage() {
                 alt="Standard Silencers Icon"
                 className={css.navIcon}
               />
-              <h2 className={css.h2}>Silencer .223 .308</h2>
+              <h2 className={css.h2}>Стандарт .223 .308</h2>
             </NavLink>
           </li>
           <li className={css.navItem}>
@@ -40,7 +40,7 @@ export default function HomePage() {
                 alt="PRO Silencers Icon"
                 className={css.navIcon}
               />
-              <h2 className={css.h2}>Silencer PRO .223 .308 .338</h2>
+              <h2 className={css.h2}>Інтегра .223 .308 .338</h2>
             </NavLink>
           </li>
         </ul>
